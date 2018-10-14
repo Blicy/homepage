@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>蓝冰·记忆</title>
+        <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./sources/css/bim.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/bimOvO/homepage/sources/imgs/favicon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kazzkiq/balloon.css/balloon.min.css">
+    </head>
+    <body style="background-image: url('https://cdn.jsdelivr.net/gh/bimOvO/homepage/sources/imgs/bg.jpg')">
+        <div id="logo">
+            <div id="logo-bg"></div>
+            <div id="logo-text">
+                <span style="color: deepskyblue">蓝冰</span>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                <span style="color: pink">记忆</span>
+            </div>
+            <img id="avatar" src="https://cn.gravatar.com/avatar/43a4d197183763781d4416acb26b4190?s=128" />
+        </div>
+        <div id="buttons">
+            <a class="button textBtn" href="#" data-balloon="关于" data-balloon-pos="up"><i class="fa fa-info-circle"></i></a>
+            <a class="button textBtn" href="#" data-balloon="伙伴" data-balloon-pos="up"><i class="fa fa-users"></i></a>
+            <a class="button textBtn" href="#"  data-balloon="链接" data-balloon-pos="up"><i class="fa fa-link"></i></a>
+            <a class="button textBtn" href="#" data-balloon="项目" data-balloon-pos="up"><i class="fa fa-archive"></i></a>
+        </div>
+        <div id="content" style="display: none; opacity: 0;">
+            <a class="button" href="#" id="btn-close"><i class="fa fa-times-circle"></i></a>
+            <div id="text">
+                Lorepsm
+            </div>
+            <div style="display: none">
+                <div class="hiddenText">
+                    <span>关于这个网站</span><br /><hr />
+                    整个网站由本人独自完成。<br />
+                    &nbsp;&nbsp;作为接触前端没多久（高三暑期才开始摸索着前进）的一只萌新，
+                        如果没有咱的好朋友们(狗狗、烷等人)的鼓励，咱也是不可能会坚持下来的，
+                        更别说什么自己写网站了，因此咱非常感谢大家对咱的帮助与支持！<hr />
+                    借物表：<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;背景图片：某次登录<a href="https://pixiv.net" target="_blank">Pixiv</a>时的背景<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;底部播放器：
+                     <a href="https://aplayer.js.org" target="_blank">Aplayer</a><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;其他内容：
+                     <a href="https://www.jsdelivr.com" target="_blank">JsDeliver</a>
+                     <a href="https://jquery.com" target="_blank">jQuery</a>
+                     <a href="https://fontawesome.com" target="_blank">Font-Awesome</a>
+                     <a href="https://github.com/kazzkiq/balloon.css" target="_blank">Balloon.css</a>
+                     <a href="https://www.gravatar.com" target="_blank">Gravatar</a>
+                </div>
+                <div class="hiddenText">
+                    <span>好伙伴们</span><br /><hr /><br />
+                    <div id="friendsList">
+                        <!-- This part will be automatically filled by javascript codes. -->
+                    </div>
+                </div>
+                <div class="hiddenText">
+                    <span>相关链接</span><br /><hr /><br />
+                    <div id="linkList">
+                        <!-- This part will be automatically filled by javascript codes. -->
+                    </div>
+                </div>
+                <div class="hiddenText">
+                    <span>实验室</span><br /><hr /><br />
+                    <div id="projList">
+                        <!-- This part will be automatically filled by javascript codes. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="player"></div>
+        <footer>
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+            <script async src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
+        
+            <script defer src="https://cdn.jsdelivr.net/gh/bimOvO/homepage/sources/js/bim.js"></script>
+        </footer>
+    </body>
+</html>
