@@ -33,34 +33,6 @@
 $('#avatar').on("mouseover", function() {this.classList.add("animated", "tada")});
 $('#avatar').on("mouseout", function() {this.classList.remove("animated", "tada")});
 
-/* ContentFiller */
-var friendsList = [
-        ["Bokutake", "https://bokutake.com", "https://cn.gravatar.com/avatar/e57379eaaadeba99e175d5173eb6ba0d"],
-        ["MoeDog", "https://prprpr.love", "https://cn.gravatar.com/avatar/5e6892e999ca8c85a358d21164167f38"],
-        ["DIYgod", "https://diygod.me", "https://cn.gravatar.com/avatar/2c0e7571f32704cc893de555a669865b"]
-    ];
-for (var i = 0; i < friendsList.length; i++) {
-    document.getElementById('friendsList').innerHTML += '<a href="'+friendsList[i][1]+'" target="_blank" data-balloon="'+friendsList[i][0]+'"><img src="'+friendsList[i][2]+'" /></a><br />';
-}
-
-var linkList = [
-    ["个人博客", "https://blog.lcy.moe"],
-    ["API服务器", "https://api.lcy.moe"],
-    ["MC服务器", "https://mc.lcy.moe"],
-    ["静态博客", "https://puq.moe"]
-];
-for (var i = 0; i < linkList.length; i++) {
-    document.getElementById('linkList').innerHTML += '<a href="'+linkList[i][1]+'" target="_blank" class="siteLink">'+linkList[i][0]+'</a><br />';
-}
-
-var projList = [
-    ["一只Hexo主题", "https://github.com/bimOvO/Kratos-Rebirth"],
-    ["这只个人主页", "https://github.com/bimOvO/homepage"]
-];
-for (var i = 0; i < projList.length; i++) {
-    document.getElementById('projList').innerHTML += '<a href="'+projList[i][1]+'" target="_blank" class="siteLink">'+projList[i][0]+'</a><br />';
-}
-
 /* Final loading */
 window.onload = function() {
     // loadlive2d("live2d", "./sources/live2d/HyNK-v2/HyNK.model.json");

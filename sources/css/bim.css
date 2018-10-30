@@ -5,6 +5,11 @@
     }
     #logo, #buttons {
         transition: all .3s ease-in-out;
+        position: fixed;
+        top: 66%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
     }
     #logo div, #logo img{
         position: fixed;
@@ -133,6 +138,7 @@
         white-space: nowrap;
         margin: 10px 0;
         transition: all .2s ease-in-out;
+        width: 100px;
     }
     #content #text a.siteLink:hover {
         color: white;

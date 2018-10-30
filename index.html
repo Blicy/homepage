@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <title>蓝冰·记忆</title>
         <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.1/sources/css/bim.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.1/sources/imgs/favicon.png">
+        <link href="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.2/sources/css/bim.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.2/sources/imgs/favicon.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kazzkiq/balloon.css/balloon.min.css">
     </head>
-    <body style="background-image: url('https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.1/sources/imgs/bg.jpg')">
+    <body style="background-image: url('https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.2/sources/imgs/bg.jpg')">
         <div id="logo">
             <div id="logo-bg"></div>
             <div id="logo-text">
@@ -20,10 +20,18 @@
             <img id="avatar" src="https://cn.gravatar.com/avatar/43a4d197183763781d4416acb26b4190?s=128" />
         </div>
         <div id="buttons">
-            <a class="button textBtn" href="#" data-balloon="关于" data-balloon-pos="up"><i class="fa fa-info-circle"></i></a>
-            <a class="button textBtn" href="#" data-balloon="伙伴" data-balloon-pos="up"><i class="fa fa-users"></i></a>
-            <a class="button textBtn" href="#"  data-balloon="链接" data-balloon-pos="up"><i class="fa fa-link"></i></a>
-            <a class="button textBtn" href="#" data-balloon="项目" data-balloon-pos="up"><i class="fa fa-archive"></i></a>
+            <script>
+                var contentList = [
+                    ["关于", "fa-info-circle"],
+                    ["伙伴", "fa-users"],
+                    ["链接", "fa-link"],
+                    ["项目", "fa-archive"]
+                ];
+                for (var i = 0; i < contentList.length; i++) {
+                    document.write('<a class="button textBtn" href="#" data-balloon="'+contentList[i][0]+'" data-balloon-pos="up"><i class="fa '+contentList[i][1]+'"></i></a>');
+                }
+                
+            </script>
         </div>
         <div id="content" style="display: none; opacity: 0;">
             <a class="button" href="#" id="btn-close"><i class="fa fa-times-circle"></i></a>
@@ -50,20 +58,47 @@
                 </div>
                 <div class="hiddenText">
                     <span>好伙伴们</span><br /><hr /><br />
-                    <div id="friendsList">
-                        <!-- This part will be automatically filled by javascript codes. -->
+                    <div>
+                        <script>
+                            var friendsList = [
+                                    ["Bokutake", "https://bokutake.com", "https://cn.gravatar.com/avatar/e57379eaaadeba99e175d5173eb6ba0d"],
+                                    ["MoeDog", "https://prprpr.love", "https://cn.gravatar.com/avatar/5e6892e999ca8c85a358d21164167f38"],
+                                    ["DIYgod", "https://diygod.me", "https://cn.gravatar.com/avatar/2c0e7571f32704cc893de555a669865b"]
+                                ];
+                            for (var i = 0; i < friendsList.length; i++) {
+                                document.write('<a href="'+friendsList[i][1]+'" target="_blank" data-balloon="'+friendsList[i][0]+'"><img src="'+friendsList[i][2]+'" /></a><br />');
+                            }
+                        </script>
                     </div>
                 </div>
                 <div class="hiddenText">
                     <span>相关链接</span><br /><hr /><br />
-                    <div id="linkList">
-                        <!-- This part will be automatically filled by javascript codes. -->
+                    <div>
+                        <script>
+                            var linkList = [
+                                ["个人博客", "https://blog.lcy.moe"],
+                                ["API服务器", "https://api.lcy.moe"],
+                                ["MC服务器", "https://mc.lcy.moe"],
+                                ["静态博客", "https://puq.moe"]
+                            ];
+                            for (var i = 0; i < linkList.length; i++) {
+                                document.write('<a href="'+linkList[i][1]+'" target="_blank" class="siteLink">'+linkList[i][0]+'</a><br />');
+                            }
+                        </script>
                     </div>
                 </div>
                 <div class="hiddenText">
                     <span>实验室</span><br /><hr /><br />
-                    <div id="projList">
-                        <!-- This part will be automatically filled by javascript codes. -->
+                    <div>
+                        <script>
+                            var projList = [
+                                ["一只Hexo主题", "https://github.com/bimOvO/Kratos-Rebirth"],
+                                ["这只个人主页", "https://github.com/bimOvO/homepage"]
+                            ];
+                            for (var i = 0; i < projList.length; i++) {
+                                document.write('<a href="'+projList[i][1]+'" target="_blank" class="siteLink">'+projList[i][0]+'</a><br />');
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
@@ -73,7 +108,7 @@
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
             <script async src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
         
-            <script defer src="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.1/sources/js/bim.js"></script>
+            <script defer src="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.2/sources/js/bim.js"></script>
         </footer>
     </body>
 </html>
