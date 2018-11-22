@@ -47,5 +47,5 @@ window.onload = function() {
             lrc: 'https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.3/sources/audio/beautiful-now.lrc'
         }]
     });
-    console.log("欢迎来到冰喵新世界~");
+    console.log("欢迎来到糖喵新世界~");
 }
