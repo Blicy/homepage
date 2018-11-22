@@ -4,17 +4,17 @@
         <meta charset="UTF-8">
         <title>蓝冰·记忆</title>
         <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.3/sources/css/bim.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.3/sources/imgs/favicon.png">
+        <link href="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.4/sources/css/bim.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.4/sources/imgs/favicon.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kazzkiq/balloon.css/balloon.min.css">
     </head>
-    <body style="background-image: url('https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.3/sources/imgs/bg.jpg')">
+    <body style="background-image: url('https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.4/sources/imgs/bg.jpg')">
         <div id="logo">
             <div id="logo-bg"></div>
             <div id="logo-text">
                 <span style="color: deepskyblue">蓝冰</span>
-                <span>&nbsp;&nbsp;&nbsp;</span>
+                <!-- <span>&nbsp;&nbsp;&nbsp;</span> -->
                 <span style="color: pink">记忆</span>
             </div>
             <img id="avatar" src="https://cn.gravatar.com/avatar/43a4d197183763781d4416acb26b4190?s=128" />
@@ -28,13 +28,13 @@
                     ["项目", "fa-archive"]
                 ];
                 for (var i = 0; i < contentList.length; i++) {
-                    document.write('<a class="button textBtn" href="#" data-balloon="'+contentList[i][0]+'" data-balloon-pos="up"><i class="fa '+contentList[i][1]+'"></i></a>');
+                    document.write('<a class="button textBtn" data-balloon="'+contentList[i][0]+'" data-balloon-pos="up"><i class="fa '+contentList[i][1]+'"></i></a>');
                 }
                 
             </script>
         </div>
         <div id="content" style="display: none; opacity: 0;">
-            <a class="button" href="#" id="btn-close"><i class="fa fa-times-circle"></i></a>
+            <a class="button" id="btn-close"><i class="fa fa-times-circle"></i></a>
             <div id="text">
                 Lorepsm
             </div>
@@ -77,7 +77,7 @@
                     <div>
                         <script>
                             var linkList = [
-                                ["博客", "https://blog.puq.moe"],
+                                ["博客", "https://blog.lcy.moe"],
                                 ["API服务器", "https://api.puq.moe"],
                                 ["游戏中心", "https://game.lcy.moe"]
                             ];
@@ -108,7 +108,7 @@
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
             <script async src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
         
-            <script defer src="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.3/sources/js/bim.js"></script>
+            <script defer src="https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.4/sources/js/bim.js"></script>
         </footer>
     </body>
 </html>

@@ -3,6 +3,9 @@
         background: center/cover no-repeat fixed;
         text-align: center;
     }
+    a {
+        cursor: pointer;
+    }
     #logo, #buttons {
         transition: all .3s ease-in-out;
         position: fixed;
@@ -34,8 +37,9 @@
         height: 180px;
     }
     #logo-text span {
+        display: inline-block;
         font-size: 120px;
-        margin: 0 20px;
+        margin: 0 1em;
         position: relative;
         transition: .3s;
     }
