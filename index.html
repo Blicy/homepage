@@ -107,6 +107,22 @@
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
             <script async src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
             <script defer src="/sources/js/bim.js"></script>
+            <script>
+                window.onload = function() {
+                    const ap = new APlayer({
+                        container: document.getElementById('player'),
+                        fixed: true,
+                        lrcType: 3,
+                        audio: [{
+                            name: 'Beautiful Now',
+                            artist: 'Zedd / Jon Bellion',
+                            url: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.3/sources/audio/beautiful-now.mp3',
+                            cover: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.3/sources/audio/beautiful-now.jpg',
+                            lrc: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.3/sources/audio/beautiful-now.lrc'
+                        }]
+                    });
+                }
+            </script>
         </footer>
     </body>
 </html>
