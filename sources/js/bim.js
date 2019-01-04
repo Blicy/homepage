@@ -42,10 +42,9 @@ window.onload = function() {
         audio: [{
             name: 'Beautiful Now',
             artist: 'Zedd / Jon Bellion',
-            url: 'https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.3/sources/audio/beautiful-now.mp3',
-            cover: 'https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.3/sources/audio/beautiful-now.jpg',
-            lrc: 'https://cdn.jsdelivr.net/gh/bimOvO/homepage@v1.3/sources/audio/beautiful-now.lrc'
+            url: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.3/sources/audio/beautiful-now.mp3',
+            cover: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.3/sources/audio/beautiful-now.jpg',
+            lrc: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.3/sources/audio/beautiful-now.lrc'
         }]
     });
-    console.log("欢迎来到糖喵新世界~");
 }
