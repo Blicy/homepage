@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>藍冰</title>
         <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/sources/css/bim.css" rel="stylesheet">
+        <link href="/sources/css/bi.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.4/sources/imgs/favicon.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kazzkiq/balloon.css/balloon.min.css">
@@ -14,7 +14,7 @@
         <div id="logo">
             <div id="logo-bg"></div>
             <div id="logo-text">
-                <span style="color: deepskyblue">蓝</span>
+                <span style="color: deepskyblue">藍</span>
                 <span style="color: pink">冰</span>
             </div>
             <img id="avatar" src="https://cn.gravatar.com/avatar/43a4d197183763781d4416acb26b4190?s=128" />
@@ -75,7 +75,7 @@
                             var linkList = [
                                 ["博客", "https://blog.lcy.moe"],
                                 ["另一只博客", "https://blicy.net"],
-                                ["API服务器", "https://api.puq.moe"]
+                                ["藍冰实验仓", "https://biec.moe"]
                             ];
                             for (var i = 0; i < linkList.length; i++) {
                                 document.write('<a href="'+linkList[i][1]+'" target="_blank" class="siteLink">'+linkList[i][0]+'</a><br />');
@@ -105,7 +105,7 @@
         <footer>
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
             <script async src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
-            <script defer src="/sources/js/bim.js"></script>
+            <script defer src="/sources/js/bi.js"></script>
             <script>
                 window.onload = function() {
                     const ap = new APlayer({
@@ -113,11 +113,11 @@
                         fixed: true,
                         lrcType: 3,
                         audio: [{
-                            name: 'Beautiful Now',
-                            artist: 'Zedd / Jon Bellion',
-                            url: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.3/sources/audio/beautiful-now.mp3',
-                            cover: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.3/sources/audio/beautiful-now.jpg',
-                            lrc: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.3/sources/audio/beautiful-now.lrc'
+                            name: 'Devotion',
+                            artist: 'RedCandle Games',
+                            url: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.4/sources/audio/Devotion.mp3',
+                            cover: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.4/sources/audio/Devotion.jpg' // ,
+                            // lrc: 'https://cdn.jsdelivr.net/gh/Blicy/homepage@v1.4/sources/audio/Devotion.lrc'
                         }]
                     });
                 }
